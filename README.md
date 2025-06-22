@@ -1,11 +1,11 @@
 # ML-Pipelines-and-GridSearchCV
 
 
-# 🚀 ML Pipelines & GridSearchCV Lab
+# ML Pipelines & GridSearchCV Lab
 
 This repository contains a guided lab notebook that demonstrates how to build, evaluate, and optimize machine learning pipelines using `Scikit-Learn`, with an emphasis on `Pipeline` objects and `GridSearchCV` for hyperparameter tuning and model validation.
 
-## 📚 About the Project
+## About the Project
 
 The lab is part of the Skills Network curriculum and covers essential techniques in structuring machine learning workflows. It showcases both simple and complex pipelines using synthetic and real-world datasets.
 
@@ -30,6 +30,7 @@ Each intermediate step in a pipeline must be a transformer, meaning it should im
 Importantly, the pipeline allows you to set the parameters of each of these steps using their names and parameter names connected by a double underscore `__`. For example, if a pipeline step is named `imputer` and you want to change its strategy, you can pass a parameter like `imputer__strategy='median'`. Additionally, steps can be entirely swapped out by assigning a different estimator or even bypassed by setting them to `'passthrough'` or `None`.
 
 A major advantage of using a pipeline is that it enables comprehensive cross-validation and hyperparameter tuning for all steps simultaneously. By integrating the pipeline within GridSearchCV, you can fine-tune not only the model but also the preprocessing steps, leading to optimized overall performance. Pipelines are essential for scenarios where preprocessing involves estimators performing operations like scaling, encoding categorical variables, imputing missing values, and dimensionality reduction. Pipelines ensure these steps are reproducibly applied to both training and test data.
+
 ----
 
 ## 📂 Contents
